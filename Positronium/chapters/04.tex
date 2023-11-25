@@ -87,23 +87,26 @@ These results convey that the current time resolution of the TPC is too high to 
 
 \section{Lifetime of the Positronium}
 
-To determine the lifetime of the positronium, a spectrum of its decay has to be measured over a long period of time, in this case roughly an hour. The discriminator is setup in a way that the $\SI{1.276}{MeV} \gamma$-quantum acts a a start signal, and any of the $SI{511}{keV}$-quanta, even those which lost energy during pick-off processes act as the stop signal for each measurement point, just the noise is cut off from the spectrum. 
+To determine the lifetime of the positronium, a spectrum of its decay has to be measured over a long period of time, in this case roughly an hour. The discriminator is setup in a way that the $\SI{1.276}{MeV} \gamma$-quantum acts a a start signal, and any of the $\SI{511}{keV}$-quanta, even those which lost energy during pick-off processes act as the stop signal for each measurement point, just the noise is cut off from the spectrum. 
 The channel axis of the recorded spectrum is transformed to a time axis, as described in chapter \ref{chap:time cal}. Then, the spectrum below $t = \SI{0}{ns}$ is cut off. The resulting spectrum can be fitted to the function: 
 $$\mathrm{counts} = A\cdot\exp{-\frac{t}{\tau_1}}+ B\cdot\exp{-\frac{t}{\tau_2}} + C $$
 with $A,B$ as amplitudes which are not of further interest, $C$ the off, which is also not of further interest and $\tau_1, \tau_2$ as the lifetimes of the positronium.
-The function is fitted to the spectrum using kafe2, which can handle both the uncertainties in counts and time. An uncertainty of 4 is assumed on the counts, while the uncertainty on the time is linearly propagated using the python uncertainties package. With both uncertainties determined, kafe2 delivers the results seen in figure \ref{} and table \ref{}
+The function is fitted to the spectrum using kafe2, which can handle both the uncertainties in counts and time. An uncertainty of 4 is assumed on the counts, while the uncertainty on the time is linearly propagated using the python uncertainties package. With both uncertainties determined, kafe2 delivers the results seen in figure \ref{fig:lifetime} and table \ref{tab:lifetime}. As seen in the figure, most of the measurements are within the 1-$\sigma$ band, however there are suspiciously many outside the 1-$\sigma$ band, which hints towards underestimated uncertainties. Which uncertainties might be too low could not be determined.\\
+We recognize the lifetime $\tau_1$ as the lifetime of the para-positronium and the lifetime of the free positron under electron-positron annihilation. In our setup, these cannot be distinguished, for reasons already discussed at the end of chapter \ref{chap:time cal}. We recognize the lifetime $\tau_2$ as the lifetime of the ortho-positron.
+Comparing these values to literature values\cite{BlueBook}, $\tau_{para} = \SI{0.12}{ns}$ , $\tau_{ortho} = \SIrange[]{2}{4}{ns}$, $\tau_{free} = \SI{0.5}{ns}$, one can see that the lifetime of ortho-positron is within the calculated uncertainty, while both the free positron-electron annihalation and para-positron annihalation is outside the calculated uncertainty. This, again, hints towards underestimated uncertainties. The skew of $\tau_1$ towards the lifetime of the free positron is shaped by the relative prevalence of the decay: In polymers, the free positron decay makes up about 60-80\% of all decays, while the para-positronium decay only contributes about 10\%.
+
 
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=110mm,scale=0.5]{Positronium/include/timecalfit.png}
-    \caption{Manual delay time fitted to peak channel number} 
-    \label{fig:timecalfit}
+    \includegraphics[width=110mm,scale=0.5]{Positronium/include/lifetimefit.png}
+    \caption{Lifetime spectrum fit graphical result} 
+    \label{fig:lifetime}
 \end{figure}
 
-\begin{table}[]
+\begin{table}[H]
     \centering
-    \caption{Lifetime spectrum fit results}
+    \caption{Lifetime spectrum fit numerical results}
     \begin{tabular}{cccccc}
          parameter & A& B & $\tau_1$ & $\tau_2$ & C\\ \hline
          estimate & 653 & 118.9 & 0.424 & 3.4 & 0.19\\
@@ -111,3 +114,6 @@ The function is fitted to the spectrum using kafe2, which can handle both the un
     \end{tabular}
     \label{tab:lifetime }
 \end{table}
+
+\section{Speed of Light}
+As the last part of this experiment, the speed of light is determined. 7 spectra of different detector distances are recorded. The increased distance leads to a lower signal rate, but also a shift of the spectrum peak to higher channel numbers. Using the results from chapter \ref{chap:time cal}, the channel number-axis is transformed to a time axis. To determine the time difference between each spectrum, the measured spectrum peaks are fitted to a gaussian distribution. The fits can be found in the appendix chapter \ref{}
