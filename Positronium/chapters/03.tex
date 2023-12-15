@@ -1,1 +1,12 @@
 \chapter{Measurement Procedure}
+\section{Time calibration}
+It is necessary to do a time calibration to transform the channel axis to a time axis because the TPC only shows the events per channel number. In order to calibrate the time, first the whole spectrum of the $^{22}$Na decay will be detected. After that, the spectrum will be measured at different time delays, starting from $\Delta t=0\,$ns to $\Delta t=32\,$ns in $4\,$ns steps, where $\Delta t=0\,$ns corresponds to $\Delta t=2\,$ns because of the fixed time delay for the TPC. When plotting each spectrum, the peaks can be fitted to a gaussian distribution to find the channel number of the peak. Then the delay times can be plotted over the channel numbers. There will be a linear relationship between the two values which can be fitted to calibrate the TPC. \\
+For the time resolution, the found value for the time calibration from the fit can be multiplied with the full width half maximum (FWHM) of the gaussian distribution.
+
+\section{Lifetime of the Positronium}
+For the determination of the lifetime of positronium, another spectrum will be measured. In this measurement, it is not possible to distinguish between the fast decays of free annihilation and the para-positronium. Therefore, the spectrum has the form
+$$counts = A \cdot e^{-\frac{t}{\tau_{1}}} + B \cdot e^{-\frac{t}{\tau_{2}}} + C $$
+with parameters $A, B, C, \tau_{1}, \tau_{2}$ which can be determined with fitting methods. $A, B$ and $C$ are constants and $\tau_{1}$ and $\tau_{2}$ are the lifetimes of the positronium.
+
+\section{Speed of Light}
+To determine the speed of light, the spectra of the decay will be measured by increased distances of the movable detector from the source. The peaks of the spectra can be determined with a gaussian distribution and can then be plotted with the distances. The speed of light directly results from a fit of this plot.
