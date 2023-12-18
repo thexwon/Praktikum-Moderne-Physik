@@ -1,0 +1,89 @@
+20191024
+Aufgabe 1:
+Name Typ Range Partialdruckfaktor Kammerdruck
+880015 Massen, 1-51, -10 , 5e-8
+880307 Amplitude
+
+Peak bei 18
+881355 Massen, 16-21, -10, 5.3e-7
+881433 Amplitude
+
+Peak bei 28
+
+883029 Massen, 26-31, -9, 5.3e-7
+883056 Amplitude
+
+Peak bei 32, 29-34 , -9 , 5.3e-7
+882708 Massen, 30-35, -10, 5.3e-7
+882747 Amplitude
+
+Peak bei 44, 
+883422 Massen, 42-47 , -9 , 5.3e-7
+883444 Amplitude
+
+Elektronenstrom inmA, Partialdruck in mbar
+1 ; 7.26e-9
+0.95, 5.08e-9
+0.92, 4.77e-9
+0.875, 4.46e-9
+0.85, 4.11e-9
+0.83, 3.74e-9
+0.79, 3,24e-9
+0.76, 2.66e-9
+0.725, 2.05e-9
+0.7, 1.43e-9
+0.67, 0.82e-9
+0.64, 0.24e-9
+
+
+Aufgabe 3:
+peak 28, start 25, ende 59.7
+Energie 892330, 28, -10, 5.4e-6
+Amplitude 892521
+peak 14, start 39.6 ende 56
+Energie 892922 14, -10, 5.3e-6
+Massen 892946
+
+Aufgabe 4
+1-21, -9, 5.4e-6
+Massen 893902
+Amplituden 894014
+
+22-42, -9, 5.4e-6
+Massen 894307
+Amplituden 894339
+
+Aufgabe 2:#
+
+
+
+
+
+
+Aufgabe 2:
+peak 40, Kammerdruck: 5.3e-6 mbar, Faktor: -10
+start 22 , ende 60.2 eV
+895849 Energie
+895934 Amplitude
+
+peak 20, Kammerdruck: 5.3e-6 mbar, Faktor: -9
+start 52.2 , ende 73.2 eV
+900339 Energie
+900403 Amplitude
+
+
+Aufgabe 5:
+Anregungsenergie: 65 eV, Kammerdruck: 5.6e-6, Faktor:-8
+901657 Masse
+901723 Amplitude
+
+Anregungsenergie: 30 eV, Kammerdruck: 5.2e-6, Faktor:-10
+902841 Masse 
+902908 Ampitude
+
+Anregungsenergie: 20 eV, Kammerdruck: 5.3e-6, Faktor:-10
+903049 Masse 
+903114 Ampitude
+
+Aufgabe 6:
+Raumtemperatur 21°C

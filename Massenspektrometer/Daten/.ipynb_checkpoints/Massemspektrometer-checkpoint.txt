@@ -9,6 +9,7 @@ Peak bei 18
 881433 Amplitude
 
 Peak bei 28
+
 883029 Massen, 26-31, -9, 5.3e-7
 883056 Amplitude
 
