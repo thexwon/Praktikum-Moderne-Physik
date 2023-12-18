@@ -36,7 +36,7 @@ Elektronenstrom inmA, Partialdruck in mbar
 0.64, 0.24e-9
 
 
-Aufgabe 4:
+Aufgabe 3:
 peak 28, start 25, ende 59.7
 Energie 892330, 28, -10, 5.4e-6
 Amplitude 892521
@@ -44,7 +44,7 @@ peak 14, start 39.6 ende 56
 Energie 892922 14, -10, 5.3e-6
 Massen 892946
 
-Aufgabe 3
+Aufgabe 4
 1-21, -9, 5.4e-6
 Massen 893902
 Amplituden 894014
