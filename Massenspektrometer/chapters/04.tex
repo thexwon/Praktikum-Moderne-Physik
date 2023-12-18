@@ -46,14 +46,49 @@ In das gemessene Spektrum des einfach ionisierten Argons wird eine Gerade angepa
     \centering
     \includegraphics[width=140mm,scale=0.8]{Massenspektrometer/include/MSArgon1Ion.png}
     \caption{Spektrum des Partialdrucks von einfach ionisiertem Argon in Abhängigkeit der Elektronenergie}
-    \label{fig:MSParDEI}
+    \label{fig:MSArgon1Ion}
 \end{figure}
 Unter der Annahme von einer Unsicherheit von \SI{5}{\%} auf den Partialdruck ergibt die Anpassung:
-$$a = \SI{2.09(2)e-10}{\frac{mbar}{eV}}, b= \SI{-1.09(1)e-8}{mbar}$$
+$$a = \SI{2.09(2)e-10}{\frac{mBar}{eV}}, b= \SI{-1.09(1)e-8}{mBar}$$
 Die Austrittsenergie ergibt sich somit unter Verwendung von gaußscher Fehlerfortpflanzung zu:
 $$E_{aus} = \SI{53.25(0.76)}{eV}$$
 Zum Literaturwert, $E_{lit(Ar^+)}= \SI{15.76}{eV}$\cite{VorbereitungsMappe} besteht eine erheblicher Differenz, welche nicht im Fehlerbereich enthalten ist. Vermutlich wurde der falsche Teil des Spektrums an eine Gerade angepasst.   
 
 \section{Aufgabe 3: Dissoziationsenergien von Stickstoff}
 
-Die Dissoziationsenergien von Stickstoff lassen sich unter Kentnis der Ionisationsenergie von atomarem Stickstoff aus den Austrittsenergien berechnen. Zur Berechnung dieser, wird analog zu Aufgabe 2 vorgegangen. 
+Die Dissoziationsenergien von Stickstoff lassen sich unter Kenntnis der Ionisationsenergie $E_I = \SI{14.5}{eV}$ von atomarem Stickstoff aus den Austrittsenergien berechnen. Zur Berechnung dieser, wird analog zu Aufgabe 2 vorgegangen. Die Spektren und angepassten Geraden sind in den Abbildungen \ref{fig:MSN2Diss} und \ref{fig:MSNDiss} abgebildet.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm,scale=0.8]{Massenspektrometer/include/MSN2Diss.png}
+    \caption{Spektrum des Partialdrucks von einfach ionisiertem molekularem Stickstoff in Abhängigkeit der Elektronenergie}
+    \label{fig:MSN2Diss}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm,scale=0.8]{Massenspektrometer/include/MSNDiss.png}
+    \caption{Spektrum des Partialdrucks von einfach ionisiertem atomarem Stickstoff in Abhängigkeit der Elektronenergie}
+    \label{fig:MSNDiss}
+\end{figure}
+damit ergibt sich für die Parameter: 
+$$a_1 = \SI{ 9.62(0.15)e-10}{\frac{mBar}{eV}}, b_1 = \SI{-5.64(0.08)e-8}{mBar}$$
+$$a_2 = \SI{4.09(0.03)e-11}{\frac{mBar}{eV}}, b_2 = \SI{-1.67(0.01)e-9}{mBar}$$
+und für die Austrittsenergien: 
+$$E_{aus(N_2^+)}= \SI{58.64(1.30)}{eV}$$
+$$E_{aus(N^{+})}= \SI{40.03(0.44)}{eV}$$
+Die Dissoziationsenergien ergeben sich dann mit
+$$E_{D(N_2^+)} = E_{aus(N^+)-E_{aus(N_2^+)}} = \SI{-17.70(1.37)}{eV}$$
+$$E_{D(N_2)} = E_{aus(N^+)} - E_I = \SI{26.43(1.30)}{eV}$$
+Diese Werte sind offensichtlich unsinnig, lassen sich aber nicht damit erklären das der falsche Bereich des Spektrums linear angepasst wurde. Die genaue Fehlerquelle konnte nicht ausgemacht werden. 
+
+\section{Aufgabe 4: Quantitative Analyse}
+Es wird ein weiteres Spektrum von Raumluft aufgenommen und anhand des Cracking-Patterns\cite{VorbereitungsMappe} indiziert. 
+Das Spektrum ist in Abbildung \ref{} sichtbar. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm,scale=0.8]{Massenspektrometer/include/MSNDiss.png}
+    \caption{Spektrum des Partialdrucks von einfach ionisiertem atomarem Stickstoff in Abhängigkeit der Elektronenergie}
+    \label{fig:MSzweitesSpektrum}
+\end{figure}
+
+
