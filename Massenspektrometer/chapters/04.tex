@@ -44,7 +44,16 @@ Zur Berechnung der Austrittsenergie von Argon, wird pro Ion von Argon ein Partia
 In das gemessene Spektrum des einfach ionisierten Argons wird eine Gerade angepasst: 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=140mm,scale=0.8]{Massenspektrometer/include/MSpardEI.png}
-    \caption{Verlauf des Partialdrucks in Abhängigkeit des Elektronenstroms}
+    \includegraphics[width=140mm,scale=0.8]{Massenspektrometer/include/MSArgon1Ion.png}
+    \caption{Spektrum des Partialdrucks von einfach ionisiertem Argon in Abhängigkeit der Elektronenergie}
     \label{fig:MSParDEI}
 \end{figure}
+Unter der Annahme von einer Unsicherheit von \SI{5}{\%} auf den Partialdruck ergibt die Anpassung:
+$$a = \SI{2.09(2)e-10}{\frac{mbar}{eV}}, b= \SI{-1.09(1)e-8}{mbar}$$
+Die Austrittsenergie ergibt sich somit unter Verwendung von gaußscher Fehlerfortpflanzung zu:
+$$E_{aus} = \SI{53.25(0.76)}{eV}$$
+Zum Literaturwert, $E_{lit(Ar^+)}= \SI{15.76}{eV}$\cite{VorbereitungsMappe} besteht eine erheblicher Differenz, welche nicht im Fehlerbereich enthalten ist. Vermutlich wurde der falsche Teil des Spektrums an eine Gerade angepasst.   
+
+\section{Aufgabe 3: Dissoziationsenergien von Stickstoff}
+
+Die Dissoziationsenergien von Stickstoff lassen sich unter Kentnis der Ionisationsenergie von atomarem Stickstoff aus den Austrittsenergien berechnen. Zur Berechnung dieser, wird analog zu Aufgabe 2 vorgegangen. 
