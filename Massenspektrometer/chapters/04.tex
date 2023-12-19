@@ -118,4 +118,58 @@ Trockene Luft enthält typischerweise Volumenanteile von \SI{72.08}{\%} Sticksto
 
 \section{Aufgabe 5: Qualitative Analyse}
 Ein unbekanntes $\text{C}_X\text{H}_Y$ Gas soll mithilfe des Massenspektrometers bestimmt werden. Dafür werden drei verschiedene Spektren bei den Elektronenenergien $E = {20,30,65} $ eV aufgenommen.
+Das Spektrum für \SI{65}{eV} ist in Abbildung \ref{fig:MS65eV} zu sehen, die anderen im Anhang in den Abbildungen \ref{fig:MS20eV},\ref{fig:MS30eV}. 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm,scale=0.8]{Massenspektrometer/include/MS65eV.png}
+    \caption{Spektrum des unbekannten Gases bei einer Elektronenenergie von \SI{65}{eV}}
+    \label{fig:MS65eV}
+\end{figure}
+Ausgehend vom höchsten Peak des \SI{65}{eV}-Spektrums, bei der Masse \SI{29}{amu}, kann man erraten das das unbekannte Gas Propan, also $\text{C}_3
+\text{H}_8$ ist. Zur weiteren Analyse wird das \SI{30}{eV}-Spektrum verwendet, da in diesem klare Peaks und eine bessere Messdichte im Vergleich zum \SI{65}{eV}-Spektrum bestehen. In den gemessenen Daten besteht ein negativer Offset, der in Tabelle \ref{tab:MSCracking} korrigiert wird um die erwarteten Peakhöhen zu berechnen. Für einige Massen scheint das erwartete Gas Propan gut zu passen, für die meisten Massen besteht allerdings eine große Abweichung zum erwarteten Wert. Mögliche Fehlerquellen sind zum Beispiel ein ungenügendes Ausspülen von ungewollten Gasen, aber auch die Tatsache das eine TMP schwere Teilchen besser abpumpt als leichtere, wodurch das Ergebnis eventuell verfälscht wird und leichtere Teilchen überproportional vertreten sind. 
+\begin{table}[]
+    \centering
+    \caption{Gemessene und erwartete Peakhöhen für Propan}
+    \begin{tabular}{cc|cccc}
+        Masse  & gemessene Peakhöhe &gemessene Peakhöhe& erwartete rel.  & erwartete Peakhöhe  \\
+        in amu & & +offset & Peakhöhe in \% \\\hline
+        12 & -0.22&0.06& 0.4  &0.00608 \\
+        13 & -0.24&0.04& 0.5  &0.0076\\
+        14 & -0.28&0.& 2.5    &0.038\\
+        15 & -0.18&0.1& 3.9   &0.05928 \\
+        25 & -0.2 &0.08& 0.7  &0.01064 \\
+        26 & -0.12&0.16& 7.6  &0.11552 \\
+        27 & 0.14 &0.42& 37.9 &0.57608 \\
+        28 & 0.74 &1.02& 59.1 &0.89832 \\
+        29 & 1.24 &1.52& 100  &1.52 \\
+        30 & 1.06 &1.34& 2.1  &0.03192\\
+        36 & -0.2 &0.08& 0.4  &0.00608\\
+        37 & -0.18&0.1& 3.1   &0.04712\\
+        38 & -0.16&0.12& 4.9  &0.07448\\
+        39 & -0.18&0.1& 16.2  &0.24624\\
+        40 & -0.04&0.24& 2.8  &0.04256\\
+        41 & -0.08&0.2& 12.4  &0.18848\\
+        42 & -0.08&0.2& 5.1   &0.07752\\
+        43 & 0.02 &0.3& 22.3  &0.33896\\
+        44 & 0.22 &0.5& 100   &1.52 \\
+        45 & 0.06 &0.34& 1.3  &0.01976 \\
+        46 & -0.14&0.14& 0.4  &0.00608 \\\hline
+    \end{tabular}
+    
+    \label{tab:MSCracking}
+\end{table}
+
+\section{Aufgabe 6: Thermische Zersetzung}
+Der Stoff $\text{CaCO}_3$ wird in der Vakuumkammer bis auf \SI{500}{K} erhitzt. Dabei werden kontinuierlich Spektren von den Massen \SIrange[]{1}{51}{amu} beobachtet. Auffällig ist in diesem vor allem der starke Peak bei \SI{44}{amu}, welche $\text{CO}_2$ entspricht. Dadurch ist zu sehen, das sich beim Erhitzen von $\text{CaCO}_3$ $\text{CO}_2$ abspaltet. Um die Zersetzungsenthalpie $\Delta H$ zubestimmen, wird während des Abkühlungsprozesses der Druck und die Spannung des Thermoelements aufgenommen. Mit der Spannung kann man über eine entsprechende Umrechnungskurve\cite{VorbereitungsMappe} auf die Temperatur schließen. 
+Die Zersetzungsenthalpie erhält man aus $$\frac{d \ln{p}}{d T^{-1}} = -\frac{\Delta H}{R} = a\cdot T^{-1}$$ wobei a die Steigung der Gerade ist und $R = \SI{8.314}{\frac{J}{K mol}}$, die sich ergibt wenn $\ln{p}$ über $T^{-1}$ aufgetragen wird. Damit ergibt sich 
+$$\Delta H = -a\cdot R$$
+Die Messdaten und der lineare Fit sind in Abbildung \ref{} aufgetragen. 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm,scale=0.8]{Massenspektrometer/include/M}
+    \caption{Messdaten und Lineare Anpassung der thermischen Zersetung}
+    \label{fig:MSTherm}
+\end{figure}
