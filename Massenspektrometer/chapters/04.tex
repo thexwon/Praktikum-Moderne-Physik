@@ -82,13 +82,40 @@ Diese Werte sind offensichtlich unsinnig, lassen sich aber nicht damit erklären
 
 \section{Aufgabe 4: Quantitative Analyse}
 Es wird ein weiteres Spektrum von Raumluft aufgenommen und anhand des Cracking-Patterns\cite{VorbereitungsMappe} indiziert. 
-Das Spektrum ist in Abbildung \ref{} sichtbar. 
+Das Spektrum ist in Abbildung \ref{fig:MSzweitesSpektrum} sichtbar. 
+Der gemessene Partialdruck aller Peaks ist in Tabelle \ref{tab:MSQuantTable} einsehbar. Da das Massenspektrometer für jede Massenzahl eine andere Sensitivität hat, muss der gemessene Partialdruck um eine die Sensitivität korrigiert werden.
+$$p_{korr} = \frac{p}{\sigma}$$
+wobei $\sigma$ die Sensitivität ist. 
+Die Sensitivitäten für die relevanten Peaks sind gegeben \cite{VorbereitungsMappe}.   
+
+\begin{table}[H]
+    \centering
+    \caption{Gemessene und korrigierte Partialdrücke und deren Anteil an der Summe der dargestellten Partialdrücke}
+    \begin{tabular}{cc|cccc}
+        Masse \\in amu & Stoff & $p$ in $10^{-10}$ mBar& Sensitivität& $p_{korr}$ in $10^{-10}$ mBar &Anteil \\\hline
+        2& Wasserstoff molekular & 0.24&0.7&0.34&\SI{1.6}{\%}\\
+        14& Stickstoff atomar &5.76&1&5.76&\SI{28.4}{\%}\\
+        16& Sauerstoff atomar &4.72&0.62&7.6&\SI{37.5}{\%}\\
+        18& Wasser &1.52&1.17&1.3&\SI{6.3}{\%}\\
+        28& Stickstoff molekular&3.2&1&3.2&\SI{15.8}{\%}\\
+        32& Sauerstoff molekular&1.04&0.62&1.7&\SI{8.2}{\%}\\
+        40& Argon atomar&0.48&1.16&0.4&\SI{2}{\%}\\
+        44& Kohlendioxid&0&0.9&0&\SI{0}{\%}\\\hline
+    \end{tabular}
+    
+    \label{tab:MSQuantTable}
+\end{table}
+
+Trockene Luft enthält typischerweise Volumenanteile von \SI{72.08}{\%} Stickstoff, \SI{20.95}{\%} Sauerstoff, \SI{0.93}{\%} Argon und andere Spurengase, wie z.B. Kohlendioxid\cite{Luft}. In feuchter Luft sind diese Anteile in Abhängigkeit der Luftfeuchte geringer. Im gemessenen Spektrum scheint der Argonanteil in dieser Größenordnung zu sein, die Anteile von Stickstoff und Sauerstoff allerdings nicht: Der Sauerstoffanteil ist zu hoch, der Stickstoffanteil zu gering. Das Auftreten eines Wasserstoffpeaks deutet daraufhin das Wasser dissoziert ist, wodurch der Sauerstoffanteil steigen würde und dazu im Verhältnis der Stickstoffanteil sinkt.
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=120mm,scale=0.8]{Massenspektrometer/include/MSNDiss.png}
-    \caption{Spektrum des Partialdrucks von einfach ionisiertem atomarem Stickstoff in Abhängigkeit der Elektronenergie}
+    \includegraphics[width=120mm,scale=0.8]{Massenspektrometer/include/MSzweitesSpektrum.png}
+    \caption{Spektrum der Raumluft}
     \label{fig:MSzweitesSpektrum}
 \end{figure}
 
+\section{Aufgabe 5: Qualitative Analyse}
+Ein unbekanntes $\text{C}_X\text{H}_Y$ Gas soll mithilfe des Massenspektrometers bestimmt werden. Dafür werden drei verschiedene Spektren bei den Elektronenenergien $E = {20,30,65} $ eV aufgenommen.
 
