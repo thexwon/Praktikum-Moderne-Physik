@@ -1,7 +1,1 @@
-L_alpha=8,3960
-L_beta=9,6700
-
-Paramter calibration: 
-Verstärkungsfaktor: Stufe 4, Offset 10%
-0,03 keV  +0,03keV
 

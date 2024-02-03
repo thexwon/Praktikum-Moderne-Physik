@@ -1,0 +1,7 @@
+#breite in micrometer, delta h in nm, höhe in micrometer 5 ; 200; 5
+5.22 ; 225; 5.33
+5.35 ; 225; 4.94 
+5.4  ; 222; 5.28
+5.59 ; 219; 4.82
+5.28 ; 222; 4.88
+
