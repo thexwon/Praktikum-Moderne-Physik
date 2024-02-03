@@ -1,1 +1,30 @@
-\chapter{Durchführung}
+\chapter{Measurement Procedure}
+\section{ Calibration of the X-ray energy detector (RED)}
+
+In this first part, the RED is calibrated by measuring direct X-ray radiation from a tungsten tube. The characteristic $L_\alpha$- and $L_\beta$-peaks are identified and the respective channel in which they occur  is assigned the characteristic energy. The energy of the characteristic x-Ray lines is known from literature. 
+
+In the second part of this exercise, the spectra of Fe, Cu, Ni, Zn and Ag samples are measured and their characteristic lines determined. By comparing their determined energy to literature values, one can evaluate the calibration done in the first part.  
+ 
+\section{Determination of the energy resolution of the RED}
+
+To determine the energy resolution of the detector, multiple spectra are recorded for different emission currents. The energy resolution is defined to be 
+$$ r = \frac{E_0}{\Delta E_{FWHM}}$$
+where $E_0$ is the center of gravity of the intensity distribution and $\Delta E_{FWHM}$ its half-width.
+In order to cleanly resolve the peaks of two lines, their distance has to at least as great as the sum of the half-width of both peaks. It is expected that with a higher counting rate the half-width increases, as scattering increases as well. 
+
+\section{Quantitative X-ray fluorescence analysis, Moseley constant}
+Using Moseley's law, one can calculate the $K_\alpha$ lines from the atomic number Z. In this part, use the recorded $K_\alpha$ and $K_\beta$ lines measured in exercise 1b to determine Rydberg's constant $R_\infty$ and the screening constant $\sigma$.
+\section{Determination of the layer thickness of thin foils}
+\label{section: determination}
+In this part we determine the thickness of an Al-foil. To do this, we take measure a spectrum of a single Al foil and further spectra of a Fe sample covered with 0,1,2,4,6 layer of Al foil.
+The samples is inserted at an angle of 45\degree, so the thickness of the foil in the X-ray beam becomes
+$$s = \sqrt{2} \cdot d \cdot n$$
+where d is the actual thickness of the foil and n the amount of foils. 
+The intensity $I_F$ of the measured fluorescence radiation is directly proportional to the intensity $I_{p,0}$ of the primary beam. The intensity of the primary is however partly diminished, as it it also absorbed by the foil. By measuring the reduced intensity $I_{p,r}$, we can determine the proportionality factor $\lambda = \frac{I_{p,r} \cdot \sqrt{2}}{I_{p,0}}$. Using the measured fluorescence radiation intensity $I_{Fe}$ of the shielded sample and the absorption law, we can then determine the thickness of the foil. 
+$$I_{AlFe} = \frac{I_{Fe}}{\lambda} = \frac{I_{p,0} \cdot I_{Fe}}{I_{p,r} \cdot \sqrt{2}} = I_{p,0} \cdot \exp{-\mu \cdot \rho \cdot d \cdot n \cdot \sqrt{2}}$$
+$$d = \frac{\ln{\frac{I_{Fe}}{I_{p,0}\cdot \sqrt{2}}}}{\mu \cdot \rho \cdot n  \cdot \sqrt{2}}$$
+
+
+\section{Qualitative X-ray fluorescence analysis on alloys}
+In this part the spectra of solder, constantan, carbide cutter for
+metalworking, and a sample of our own choice is measured. The constituents of these alloys can be determined by matching the measured $K_\alpha$ and $K_\beta$ to known element lines. The intensity relation of the lines has to be kept in mind. The concentration is then given by $$c = \frac{I_a}{I_e}$$ where $I_a$ is the measured intensity of the matched lines and $I_e$ the literature intensity of a pure element sample. 
