@@ -1,3 +1,48 @@
-\chapter{Ziel des Versuchs, Theoretische Grundlagen}
-\section{Abschnitt}
-\subsection{Unterabschnitt}
+\chapter{Aim of the Experiment, Theoretical Background}
+The aim of this experiment is to learn the basics of material analysis with X-rays and how to work with a modern X-ray device. With the method MAX it is possible to determine the composition of materials. A field of application is for example luggage control at airports. Here, the absorption capacity of a material to X-ray radiation is used.
+
+\section{Bohr's atom model}
+In 1913, Niels Bohr proposed a new model of the atom which explains the spectral emission lines of hydrogen. Bohr's model overcomes the problems and limitations of Rutherford's model of an atom. Bohr put forth three postulates, that partly contradict the classical mechanics and electrodynamics.
+\begin{description}
+\item 1. Postulate\\
+Analogous to the structure of the Solar System, except in the atom model the attraction is provided by electrostatic force instead of gravity, the negatively charged electrons revolve around a positively charged nucleus in fixed orbits. These stable orbits are called stationary orbits. Every circular orbit has a certain discrete distance $r_{n}$ from the nucleus and has a certain amount of fixed energy $E_{n}$. The electrons can not orbit in between these discrete orbits. As long as the electrons revolve around the nucleus on the  discrete orbits, do not radiate energy. As a result due to requirement, that the centripetal force is equal to the coulomb force, the electrons revolve around the nucleus with the discrete orbits 
+$$r_{n}=\frac{h^{2} \cdot \epsilon_{0} \cdot n^{2}}{e^{2} \cdot m_{e} \cdot \pi}~.$$
+Therefore, the atomic energy levels are
+$$E_{n}=- \frac{m_{e} \cdot e^{4}}{8 \cdot c \cdot \epsilon^{2}_{0} \cdot h^{3}}=-\frac{h \cdot R_{\infty}}{n^{2}}=-13,6\,\text{eV}\cdot\frac{1}{n^{2}}~.$$
+Here, $R_{\infty}=10973731,568539\frac{1}{m}$ is the Rydberg constant. 
+\item 2. Postulate\\
+Just like the energy levels are denoted by integers $n=1,2,3,...$, which are called quantum numbers, the angular momentum attain a discrete value $$L=hn~.$$
+\item 3. Postulate\\
+When an electron jumps from one energy level to another electromagnetic radiation in form of photons is absorbed or emitted with the energy that corresponds to the energy difference of the levels $$\Delta E=E_{m}-E_{n}=h\nu$$ 
+with $\nu$ being the frequency of the photon.
+\end{description}
+    
+
+\section{Generation of X-rays}
+X-rays are electromagnetic radiation with high energy in the range $100\,$eV to $100\,$keV and can be generated within an X-ray tube.
+There are two types of radiation generated:
+\begin{itemize}
+    \item When an electron collides with an inner shell electron of an atom from the anode material, both are ejected from the atom leaving a hole. This hole will then be filled by an electron from the outer shell. Because of the loss of energy an X-ray photon is emitted. This type of X-rays are called characteristic X-rays.
+    \item When an electron passes a nucleus of an atom from the anode material it is decelerated and deflected. As a result, bremsstrahlung is emitted.
+\end{itemize}
+
+\section{Absorption of X-rays}
+When X-ray radiation travels trough matter, its intensity attenuates. There are four mechanisms of X-ray attenuation:
+\begin{itemize}
+    \item Simple scattering: When a low-energy photon collides with an atom, it does not have sufficient energy to displace an electron. Due to the interaction between the electric field of the X-ray photon and the atom, a force between them is induces, deflecting the photons path and causing scattering without change in momentum.
+    \item Compton scattering: When an X-ray photon collides with a weakly bound electron from the outer shell of an atom, it transfers some of its energy to the electron. The photon has sufficient energy to eject the electron from its atomic orbit by exceeding its binding energy. As a result of this interaction, there is a free electron and the photon which now has lower energy is scattered.
+    \item Photoelectric effect: In the photoelectric effect, a photon is absorbed by an atom and it transfers its energy to an electron that is ejected from the atom. In order for this process to take place, the energy of the incident photon has to be higher then the respective electron. The atom is now ionizes in an excited state. It returns to the ground state while emitting energy in form of X-rays that are at a different energy level than the incident photon.
+    \item Pair production: A high-energy photon with an energy over $1.02\,$MeV can convert into an electron-positron pair if the photon is near an atomic nucleus. To produce the electron and the positron, the photon transfers all its energy. For pair production to occur, the energy of the incident photon has to be at least the rest mass energy of the electron and the positron. The antiparticles interact with each other or nearby electrons and positrons and annihilate, therefore a pair of photons with the energy $511\,$keV are produced. 
+\end{itemize}
+
+
+\section{Moseley's law}
+\label{chapter:moseley}
+Moseley's describes the characteristic X-rays emitted by atoms. It is used to determine the characteristic X-ray lines of an element.
+The emitted energy is:
+$$E=f_{R}h(Z-\sigma_{1,2})^{2}\left(\frac{1}{n_{1}^{2}}-\frac{1}{n_{2}^{2}}\right)$$
+with $Z$ being the atomic number,$\sigma_{1,2}$ the shielding constant, $n_{1,2}$ the quantum numbers of the energy levels and $f_{R}=cR_{\infty}$the Rydberg-frequency.\\
+For the $K_{\alpha}$-Line it is:
+$$\sqrt{E}=\frac{\sqrt{3}}{2}\sqrt{hcR_{\infty}}Z-\frac{\sqrt{3}}{2}\sigma_{2,1}$$
+and for the $K_{\beta}$-Line:
+$$\sqrt{E}=\frac{\sqrt{8}}{2}\sqrt{hcR_{\infty}}Z-\frac{\sqrt{8}}{2}\sigma_{3,1}~.$$
