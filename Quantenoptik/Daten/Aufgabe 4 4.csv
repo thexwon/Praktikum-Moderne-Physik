@@ -1,0 +1,16 @@
+g2(0): T&A;0,994505393
+g2(0): T&B;0,995571139
+g2(0): T&A&B;0,968275189
+Counts: T;35431300,0
+Counts: A;12953740,0
+Counts: B;17872405,0
+Counts: T&A;228223,000
+Counts: T&B;315219,000
+Counts: T&A&B;1966,00000
+Capture Duration (s);10,0000000
+Rates (Hz): T;3543130,00
+Rates (Hz): A;1295374,00
+Rates (Hz): B;1787240,50
+Rates (Hz): T&A;22822,3000
+Rates (Hz): T&B;31521,9000
+Rates (Hz): T&A&B;196,600000
